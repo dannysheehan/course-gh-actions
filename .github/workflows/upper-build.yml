@@ -2,12 +2,14 @@ name: upper-build
 
 on:
   push:
-  #  paths:
-  #    - ".github/workflows/upper-builld.yml"
+    paths:
+      - ".github/workflows/upper-builld.yml"
   #    -  "upper/**"
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-    - run: go version
+    - run: pwd && ls -al
+    - run: actions/checkout@v4
+    - run: pwd && ls -al
