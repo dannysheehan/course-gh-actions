@@ -1,11 +1,10 @@
 name: upper-build
 
 on:
-  workflow_dispatch: # manually trigger the workflow
   push:
-    paths:
-      - ".github/workflows/upper-builld.yml"
-      -  "upper/**"
+  #  paths:
+  #    - ".github/workflows/upper-builld.yml"
+  #    -  "upper/**"
 
 jobs:
   build:
